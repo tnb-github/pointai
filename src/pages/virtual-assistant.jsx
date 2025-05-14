@@ -3,7 +3,7 @@ import Header from '../component/header'
 import Footer from '../component/footer'
 
 
-function ShoeTryon() {
+function VirtualAssistant() {
 
   return (
     <>
@@ -14,7 +14,7 @@ function ShoeTryon() {
             </video> */}
           <div class="container lg:pt-10 pt-10">
               <div class="md:text-start text-center" data-aos="fade-right">
-                  <h3 class="text-black">Virtual Shoe Try-on</h3>
+                  <h3 class="text-black">Virtual Assistant</h3>
                   <p class="text-black sm:pt-4 pt-3 md:pb-10 pb-4 xl:w-[50%] lg:w-[50%] md:w-[59%]">Point AI offers a safe, easy way to try makeup virtually 
                     using a mobile or web camera, with accurate color and texture—no hesitation, just seamless online beauty trials.</p>
                   <div class="flex gap-10 flex-wrap-reverse items-center md:justify-start justify-center">
@@ -24,7 +24,7 @@ function ShoeTryon() {
                           </a>
                       </div>
                   </div>
-              </div>
+                </div>
           </div>
       </section>
       <section class="lg:py-[100px] md:py-[70px] py-[50px] bg-primary">
@@ -57,21 +57,17 @@ function ShoeTryon() {
         <div class="container">
             <div class="grid lg:grid-cols-[55%_45%] md:grid-cols-[48%_48%] justify-around md:gap-0 gap-6">
             <div class="w-[95%] lg:w-[95%] flex lg:justify-end justify-center">
-                        <figure>
-                            <img class="w-max" src="/src/assets/images/index/makeup2.png" alt="makeup"
-                                data-aos="zoom-in-up"/>
-                        </figure>
+                    <video autoPlay muted loop id="makeup1">
+                        <source src="/src/assets/videos/makeup-video1.mp4" type="video/mp4"/>
+                    </video>
                 </div>
                 <div class="flex text-black flex-col xl:w-full lg:w-[90%] md:text-start text-center aos-init aos-animate" data-aos="fade-up">
                     <div class="flex items-center md:justify-start justify-center">
                         <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
-                        <h6>Makeup Tryon</h6>
+                        <h6>How it works</h6>
                     </div>
-                    <h4 class="py-4">Product Features</h4>
-                    <p class="xl:w-[93%] lg:w-[95%]">Tryndbuy virtual makeup integration makes your online store more experiential and preferable. 
-                    Customer will get to try-on all products for complete makeup looks with realistic color and texture. Customers instantly with live 
-                    camera can do mix and match any makeup products to do complete makeover. You can provide them more fun and engaging makeup shopping
-                     experience by implementing Tryndbuy try-on feature to your e-commerce portal.
+                    <h4 class="py-4">Makeup tryon in action</h4>
+                    <p class="xl:w-[93%] lg:w-[95%]">Lorem ipsum.
                         
                         .</p>
                     <div class="lg:mt-14 md:mt-10 mt-6">
@@ -87,4 +83,4 @@ function ShoeTryon() {
   )
 }
 
-export default ShoeTryon
+export default VirtualAssistant

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Logo from '../assets/images/logo/logo_white.png'
 
 function Header() {
 
@@ -25,7 +26,7 @@ const handleMouseOut =() => {
         <div class="container mx-auto flex justify-between items-center py-4 px-6" data-aos="fade-down">
             <figure class="flex items-center">
                 <a href="/">
-                    <img class="w-36" src="/src/assets/images/logo/logo_white.png" alt="pointai"/>
+                    <img class="w-36" src={Logo} alt="pointai"/>
                 </a>
             </figure>
             <nav class="hidden lg:flex space-x-8">  
@@ -44,7 +45,7 @@ const handleMouseOut =() => {
                         </div>
                         <div class="relative dropdown2 w-50">
                             <a class="block px-4 py-2 cursor-pointer linkhover p"  onMouseOver={handleMouseOver}>Apparel <i class="fa-solid fa-chevron-right text-xs"></i></a>
-                            <div class="absolute left-[50] top-0 w-60 text-primary shadow-lg dropdown-menu2 px-2 top-[-40]">
+                            <div class="absolute left-[50] w-60 text-primary shadow-lg dropdown-menu2 px-2 top-[-40]">
                                 <a class="block px-4 py-2 linkhover  p" href="/product/apparel/catalog-generation">Apparel Catalog Generation</a>
                                 <a class="block px-4 py-2 linkhover  p" href="/product/apparel/kids-catalog-generation">Kids Catalog Generation</a>
                                 <a class="block px-4 py-2 linkhover  p" href="/product/apparel/video">Apparel Video</a>
