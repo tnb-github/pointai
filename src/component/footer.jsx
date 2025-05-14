@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import Logo from '../assets/images/logo/logo_white.png'
+
 
 function Footer() {
 
@@ -9,7 +11,7 @@ function Footer() {
                 <div
                     class="flex flex-col xl:w-1/4 md:w-[30%] text-primary md:items-start items-center md:text-start text-center">
                     <figure>
-                        <img class="w-44" src="/src/assets/images/logo/logo_white.png" alt="logo"/>
+                        <img class="w-44" src={Logo} alt="logo"/>
                     </figure>
                     <p class="lg:py-4 py-3">Auto-generate advanced ecom platform
                      with interactive virtual product & try-on.</p>

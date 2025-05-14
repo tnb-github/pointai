@@ -1,6 +1,18 @@
 import { useEffect, useState } from 'react'
 import Header from '../component/header'
 import Footer from '../component/footer'
+import ATO_Img from '../assets/images/index/01.png'
+import MTO_Img from '../assets/images/index/02.png'
+import ETO_Img from '../assets/images/index/03.png'
+import CTO_Img from '../assets/images/index/04.png'
+import Patents_Img from '../assets/images/index/patents.png'
+import Innovator_Img from '../assets/images/index/innovator.png'
+import Partner_Img from '../assets/images/index/partner.png'
+import Biba_Img from '../assets/images/index/biba.png'
+import AB_Img from '../assets/images/index/aditya-birla.png'
+import VM_Img from '../assets/images/index/vero-moda.png'
+import FK_Img from '../assets/images/index/flipkart.png'
+import HeroBg_Vid from '../assets/videos/hero_bg.mp4'
 
 
 function Home() {
@@ -31,7 +43,7 @@ function Home() {
       <Header/>
         <section class="bg-heroBg bg-cover bg-center md:pt-36 pt-32 lg:pb-[100px] md:pb-[70px] pb-[50px]">
             <video autoPlay muted loop id="myVideo">
-                <source src="/src/assets/videos/hero_bg.mp4" type="video/mp4"/>
+                <source src={HeroBg_Vid} type="video/mp4"/>
             </video>
           <div class="container lg:pt-30 pt-30">
               <div class="md:text-start text-center" data-aos="fade-right">
@@ -44,10 +56,6 @@ function Home() {
                               Explore More
                           </a>
                       </div>
-                      {/* <div class="flex flex-col text-white">
-                          <h3><span class="number" data-final-value="300">0</span>+</h3>
-                          <p>Trusted Companies</p>
-                      </div> */}
                   </div>
               </div>
           </div>
@@ -68,7 +76,7 @@ function Home() {
                             <div class="relative h-full">
                                 <figure class="h-full">
                                     <img class="w-full h-full relative top-0 left-0"
-                                        src="/src/assets/images/index/01.png" alt="apparel_try_on"/>
+                                        src={ATO_Img} alt="apparel_try_on"/>
                                     <div class="absolute top-0 left-0 w-full h-full linear-gradient">
                                     </div>
                                 </figure>
@@ -89,7 +97,7 @@ function Home() {
                             <div class="relative h-full">
                                 <figure class="h-full">
                                     <img class="w-full h-full relative top-0 left-0"
-                                        src="/src/assets/images/index/02.png" alt="makeup_try_on"/>
+                                        src={MTO_Img} alt="makeup_try_on"/>
                                     <div class="absolute top-0 left-0 w-full h-full linear-gradient"/>
                                 </figure>
                             </div>
@@ -108,7 +116,7 @@ function Home() {
                             <div class="relative h-full">
                                 <figure class="h-full">
                                     <img class="w-full h-full relative top-0 left-0"
-                                        src="/src/assets/images/index/03.png" alt="eyewear_try_on"/>
+                                        src={ETO_Img} alt="eyewear_try_on"/>
                                     <div class="absolute top-0 left-0 w-full h-full linear-gradient"/>
                                 </figure>
                             </div>
@@ -129,7 +137,7 @@ function Home() {
                             <div class="relative h-full">
                                 <figure class="h-full">
                                     <img class="w-full h-full relative top-0 left-0"
-                                        src="/src/assets/images/index/4.png" alt="apparel_catalog"/>
+                                        src={CTO_Img} alt="apparel_catalog"/>
                                     <div class="absolute top-0 left-0 w-full h-full linear-gradient"/>
                                 </figure>
                             </div>
@@ -197,23 +205,6 @@ function Home() {
                             <p class="xl:w-[80%]">Lorem ipsum  dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt ut 
                               labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip 
                               ex ea commodo  consequat.</p>
-                            {/* <div class="flex gap-2 lg:pt-10 pt-7 items-center">
-                                <div class="flex flex-col md:items-start items-center md:text-start text-center">
-                                    <figure>
-                                        <img class="w-16 mb-1" src="/src/assets/images/icons/prize.svg" alt="prize"/>
-                                    </figure>
-                                    <h2><span class="number" data-final-value="15">0</span>+</h2>
-                                    <p>Years Of Experience</p>
-                                </div>
-                                <hr class="w-[0.5px] h-44 bg-white md:mx-8 mx-4"/>
-                                <div class="flex flex-col md:items-start items-center md:text-start text-center">
-                                    <figure>
-                                        <img class="w-16 mb-1" src="/src/assets/images/icons/worldwide.svg" alt="prize"/>
-                                    </figure>
-                                    <h2><span class="number" data-final-value="150">0</span>K+</h2>
-                                    <p>Worldwide User</p>
-                                </div>
-                            </div> */}
                             <div class="flex lg:gap-12 gap-8 items-center lg:pt-14 pt-10 flex-wrap justify-center">
                                 <div>
                                     <a href="Services.html" class="hover1">Know More</a>
@@ -234,7 +225,7 @@ function Home() {
                         <div class="flex lg:py-6 py-6 lg:px-6 px-6 gap-8  bg-[#131B2666] border-[1px] border-solid border-[#717171] text-primary xl:w-[85%] lg:w-[90%] sm:flex-row flex-col sm:items-start items-center sm:text-start text-center group"
                             data-aos="flip-left">
                             <figure>
-                                <img class="rounded-full md:w-36 w-[150px]" src="/src/assets/images/index/patents.png"
+                                <img class="rounded-full md:w-36 w-[150px]" src={Patents_Img}
                                     alt="patents"/>
                             </figure>
                             <div class="flex lg:py-6 py-6 gap-2 flex-col">
@@ -247,7 +238,7 @@ function Home() {
                         <div class="flex lg:py-10 py-8 lg:px-8 px-6 gap-8  bg-[#131B2666] border-[1px] border-solid border-[#717171] text-primary xl:w-[85%] lg:w-[90%] self-end sm:flex-row flex-col sm:items-start items-center sm:text-start text-center group"
                             data-aos="flip-left">
                             <figure>
-                                <img class="rounded-full md:w-36 w-[150px]" src="/src/assets/images/index/innovator.png"
+                                <img class="rounded-full md:w-36 w-[150px]" src={Innovator_Img}
                                     alt="amazon"/>
                             </figure>
                             <div class="flex gap-2 flex-col">
@@ -260,7 +251,7 @@ function Home() {
                         <div class="flex lg:py-10 py-8 lg:px-8 px-6 gap-8  bg-[#131B2666] border-[1px] border-solid border-[#717171] text-primary xl:w-[85%] lg:w-[90%] sm:flex-row flex-col sm:items-start items-center sm:text-start text-center group"
                             data-aos="flip-left">
                             <figure>
-                                <img class="rounded-full md:w-36 w-[90px]" src="/src/assets/images/index/partner.png"
+                                <img class="rounded-full md:w-36 w-[90px]" src={Partner_Img}
                                     alt="Partners"/>
                             </figure>
                             <div class="flex gap-2 flex-col">
@@ -288,31 +279,31 @@ function Home() {
             <div class="partners_Slider overflow-hidden relative group ">
                 <div class="w-[calc(250px*14)] animate-scroll flex group-hover:animate-paused">
                     <div class="w-60">
-                        <img class="w-36" src="/src/assets/images/index/biba.png" alt="biba"/>
+                        <img class="w-36" src={Biba_Img} alt="biba"/>
                     </div>
                     <div class="w-60">
-                        <img class="w-36" src="/src/assets/images/index/aditya-birla.png" alt="Aditya Birla"/>
+                        <img class="w-36" src={AB_Img} alt="Aditya Birla"/>
                     </div>
                     <div class="w-60">
-                        <img class="w-36" src="/src/assets/images/index/vero-moda.png" alt="Vero moda"/>
+                        <img class="w-36" src={VM_Img} alt="Vero moda"/>
                     </div>
                     <div class="w-60">
-                        <img class="w-36" src="/src/assets/images/index/flipkart.png" alt="Flipkart"/>
+                        <img class="w-36" src={FK_Img} alt="Flipkart"/>
                     </div>
                     <div class="w-60">
-                        <img class="w-36" src="/src/assets/images/index/biba.png" alt="biba"/>
+                        <img class="w-36" src={Biba_Img} alt="biba"/>
                     </div>
                     <div class="w-60">
-                        <img class="w-36" src="/src/assets/images/index/biba.png" alt="biba"/>
+                        <img class="w-36" src={Biba_Img} alt="biba"/>
                     </div>
                     <div class="w-60">
-                        <img class="w-36" src="/src/assets/images/index/biba.png" alt="biba"/>
+                        <img class="w-36" src={Biba_Img} alt="biba"/>
                     </div>
                     <div class="w-60">
-                        <img class="w-36" src="/src/assets/images/index/biba.png" alt="biba"/>
+                        <img class="w-36" src={Biba_Img} alt="biba"/>
                     </div>
                     <div class="w-60">
-                        <img class="w-36" src="/src/assets/images/index/biba.png" alt="biba"/>
+                        <img class="w-36" src={Biba_Img} alt="biba"/>
                     </div>
                 </div>
             </div>
