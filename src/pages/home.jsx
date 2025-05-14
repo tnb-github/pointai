@@ -5,19 +5,26 @@ import Footer from '../component/footer'
 
 function Home() {
 
-  const openVideoModal = () => {
-    if (document.getElementById("videoModal")) {
-            document.getElementById("videoModal").classList.remove("hidden");
-            document.getElementById("videoModal").classList.add("flex");
+  const startVideo = () => {
+        const introVideo = document.getElementById("introVideo")
+        introVideo.classList.remove("hidden")
+        introVideo.play();
+        document.getElementById("openVideoContainer").classList.add("hidden");
+        document.getElementById("closeVideo").classList.remove("hidden");
+        introVideo.addEventListener('ended',myHandler,false);
+            function myHandler(e) {
+                stopVideo()
+            }
     }
-}
 
-  const closeModal = () => {
-    if (document.getElementById("videoModal")) {
-        document.getElementById("videoModal").classList.add("hidden");
-        document.getElementById("videoModal").classList.remove("flex");
+    const stopVideo = () => {
+        const introVideo = document.getElementById("introVideo")
+        document.getElementById("openVideoContainer").classList.remove("hidden");
+                introVideo.classList.add("hidden")
+                document.getElementById("closeVideo").classList.add("hidden");
+                introVideo.pause();
     }
-  }
+
 
   return (
     <>
@@ -61,7 +68,7 @@ function Home() {
                             <div class="relative h-full">
                                 <figure class="h-full">
                                     <img class="w-full h-full relative top-0 left-0"
-                                        src="/src/assets/images/index/1.png" alt="apparel_try_on"/>
+                                        src="/src/assets/images/index/01.png" alt="apparel_try_on"/>
                                     <div class="absolute top-0 left-0 w-full h-full linear-gradient">
                                     </div>
                                 </figure>
@@ -82,7 +89,7 @@ function Home() {
                             <div class="relative h-full">
                                 <figure class="h-full">
                                     <img class="w-full h-full relative top-0 left-0"
-                                        src="/src/assets/images/index/2.png" alt="makeup_try_on"/>
+                                        src="/src/assets/images/index/02.png" alt="makeup_try_on"/>
                                     <div class="absolute top-0 left-0 w-full h-full linear-gradient"/>
                                 </figure>
                             </div>
@@ -101,7 +108,7 @@ function Home() {
                             <div class="relative h-full">
                                 <figure class="h-full">
                                     <img class="w-full h-full relative top-0 left-0"
-                                        src="/src/assets/images/index/3.png" alt="eyewear_try_on"/>
+                                        src="/src/assets/images/index/03.png" alt="eyewear_try_on"/>
                                     <div class="absolute top-0 left-0 w-full h-full linear-gradient"/>
                                 </figure>
                             </div>
@@ -144,11 +151,14 @@ function Home() {
                 </div>
             </div>
         </section>
-        <section class="mx-auto lg:mb-[100px] md:mb-[70px] mb-[50px] bg-center lg:w-[95%] w-[95%]">
-            <video loop id="intro">
+        <section class="mx-auto lg:mb-[100px] md:mb-[70px] mb-[50px] bg-ctaBg bg-no-repeat bg-center lg:w-[95%] w-[95%]" style={{position: 'relative'}}>
+            <video id="introVideo" class="hidden">
                 <source src="/src/assets/videos/tryndbuy-intro.mp4" type="video/mp4"/>
             </video>
-            <div class="container">
+            <button id="closeVideo" class="absolute top-5 right-10 text-gray-500 hover:text-gray-700 z-50 hidden">
+                                    <i class="fa-solid fa-xmark text-3xl text-white hover:text-secondary"  onClick={stopVideo}></i>
+                                </button>
+            <div class="container"  id="openVideoContainer" >
                 <div class="flex md:gap-4 gap-10 md:flex-row flex-col lg:py-32 md:py-24 py-16">
                     <div class="flex md:w-1/2 justify-center" data-aos="fade-up">
                         <div class="text-primary md:text-start text-center flex flex-col md:items-start items-center">
@@ -158,33 +168,17 @@ function Home() {
                             </div>
                             <h2 class="pt-4 md:pb-4 pb-3 xl:w-[90%]">Unlock The Future with Point AI</h2>
                             <div class="lg:mt-6 mt-4">
-                                <a href="/products" class="hover1">Get Started</a>
+                                <a class="hover1" onClick={startVideo}>Play Intro</a>
                             </div>
                         </div>
                     </div>
                     <div class="flex md:w-1/2 justify-center items-center">
-                        <a id="openVideoModal" class="flex gap-4 items-center group transition-all" data-aos="zoom-in-up" onClick={openVideoModal}>
+                        <a class="flex gap-4 items-center group transition-all" data-aos="zoom-in-up" onClick={startVideo}>
                             <figure
                                 class="flex items-center justify-center md:w-24 w-20 h-20 md:h-24 rounded-full bg-primary animate-pulse group-hover:bg-secondary">
                                 <i class="fa fa-play text-background-primaryBg  md:text-4xl text-2xl"></i>
                             </figure>
                         </a>
-                        <div id="videoModal"
-                            class="fixed inset-0 items-center justify-center bg-black bg-opacity-50 hidden z-50">
-                            <div class="rounded-lg overflow-hidden shadow-lg w-full max-w-3xl">
-                                <button id="closeModal"
-                                    class="absolute top-5 right-5 text-gray-500 hover:text-gray-700 z-50" onClick={closeModal}>
-                                    <i class="fa-solid fa-xmark text-3xl text-white hover:text-secondary"></i>
-                                </button>
-                                <div class="relative p-4 animate-slideFadeTwistEntrance">
-                                    {/* <iframe src="https://www.youtube.com/embed/XwEHJ2qVqDQ"
-                                        title="YouTube video player"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-                                        class="w-full h-64 md:h-96 border-0"></iframe> */}
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -280,9 +274,9 @@ function Home() {
                 </div>
             </div>
         </section>
-        <section class="lg:py-[100px] md:py-[70px] py-[50px] bg-background-dim">
+        <section class="lg:py-[100px] md:py-[50px] py-[50px] bg-[#f6f6ed]">
             <div class="lg:w-[90%] w-[95%] m-auto">
-                  <div class="flex items-center justify-center text-center flex-col text-primary" data-aos="fade-up">
+                  <div class="flex items-center justify-center text-center flex-col text-black" data-aos="fade-up">
                       <div class="flex items-center md:justify-start justify-center">
                           <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
                           <h6>OUR PARTNERS</h6>

@@ -6,6 +6,8 @@ import Contact from './pages/contact'
 import Products from './pages/products'
 import ApparelTryon from './pages/apparel-tryon'
 import MakeupTryon from './pages/makeup-tryon'
+import WatchTryon from './pages/watch-tryon'
+import ShoeTryon from './pages/shoe-tryon'
 import AOS from 'aos'
 import "aos/dist/aos.css";
 import './App.css'
@@ -24,8 +26,10 @@ function App() {
 			    <Route exact path="/about-us" element={<About/>} />
 			    <Route exact path="/contact-us" element={<Contact/>} />
 			    <Route exact path="/products" element={<Products/>} />
-			    <Route exact path="/product/try-on-apparel" element={<ApparelTryon/>} />
-                <Route exact path="/product/try-on-makeup" element={<MakeupTryon/>} />
+			    <Route exact path="/product/vtryon/apparel" element={<ApparelTryon/>} />
+          <Route exact path="/product/vtryon/makeup" element={<MakeupTryon/>} />
+          <Route exact path="/product/vtryon/watch" element={<WatchTryon/>} />
+          <Route exact path="/product/vtryon/shoe" element={<ShoeTryon/>} />
         </Routes>
 	</Router>
   )

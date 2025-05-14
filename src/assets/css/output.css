@@ -44,7 +44,7 @@ Version      :1.0
 :root {
   /* Color variables */
   --primaryColor: #ffffff;
-  --secondaryColor: #9e754c;
+  --secondaryColor: #ee9f38;
   /* Background color variables */
   --background: #04070e;
   --secondary-background: #131B26;
@@ -555,6 +555,10 @@ menu {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+ul.a {
+  list-style-type: circle;
 }
 
 /*
@@ -1119,7 +1123,7 @@ button,
 .hover1 {
   padding: 10px 25px;
   background-color: transparent;
-  border-radius: 40px;
+  border-radius: 5px;
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -1132,6 +1136,7 @@ button,
   align-items: center;
   width: -moz-max-content;
   width: max-content;
+  color: black;
 }
 
 .hover1::before,
@@ -1158,7 +1163,7 @@ button,
   top: calc(100% + 16px);
 }
 
-.hover1:hover::before,
+/* .hover1:hover::before,
     .hover1:hover::after {
   height: 50px;
   width: 50px;
@@ -1166,11 +1171,11 @@ button,
 
 .hover1:hover {
   color: white;
-}
+} */
 
-.hover1:active {
+/* .hover1:active {
   filter: brightness(0.8);
-}
+} */
 
 .active,
     .linkhover:hover {
@@ -1239,6 +1244,46 @@ button,
   max-height: 500px;
 }
 
+.dropdown-menu1 {
+  opacity: 0;
+  visibility: hidden;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease, visibility 0.3s ease;
+}
+
+.dropdown-menu1.open {
+  opacity: 1;
+  visibility: visible;
+  max-height: 500px;
+}
+
+.dropdown1:hover .dropdown-menu1 {
+  opacity: 1;
+  visibility: visible;
+  max-height: 500px;
+}
+
+.dropdown-menu2 {
+  opacity: 0;
+  visibility: hidden;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease, visibility 0.3s ease;
+}
+
+.dropdown-menu2.open {
+  opacity: 1;
+  visibility: visible;
+  max-height: 500px;
+}
+
+.dropdown2:hover .dropdown-menu2 {
+  opacity: 1;
+  visibility: visible;
+  max-height: 500px;
+}
+
 .accordion-content {
   max-height: 0;
   overflow: hidden;
@@ -1297,6 +1342,10 @@ button,
   left: 5%;
 }
 
+.left-\[50\]{
+  left: 12rem;
+}
+
 .right-0{
   right: 0px;
 }
@@ -1307,6 +1356,14 @@ button,
 
 .right-5{
   right: 1.25rem;
+}
+
+.right-10{
+  right: 2.5rem;
+}
+
+.top-\[-40\]{
+  top: -40px;
 }
 
 .top-0{
@@ -1498,10 +1555,6 @@ button,
   height: 2.25rem;
 }
 
-.h-96{
-  height: 24rem;
-}
-
 .h-\[60px\]{
   height: 60px;
 }
@@ -1582,9 +1635,18 @@ button,
   width: 12rem;
 }
 
+.w-50{
+  width: 12.5rem;
+}
+
 .w-60{
   width: 15rem;
 }
+
+.w-100{
+  width: 25rem;
+}
+
 
 .w-9{
   width: 2.25rem;
@@ -2049,6 +2111,14 @@ button,
   background-color: #131B2699;
 }
 
+.bg-\[\#f6f6ed\]{
+  background-color: #f6f6ed;
+}
+
+.bg-background-blurBg{
+  background-color: var(--blur-bg);
+}
+
 .bg-background-blurBg{
   background-color: var(--blur-bg);
 }
@@ -2066,7 +2136,7 @@ button,
 }
 
 .bg-background-secondaryBg{
-  background-color: var(--secondary-background);
+  background-color: var(--secondaryColor);
 }
 
 .bg-black{
@@ -2100,7 +2170,7 @@ button,
 }
 
 .bg-ctaBg{
-  background-image: url('../images/bg/cta.jpg');
+  background-image: url('../images/bg/VideoTile.png');
 }
 
 .bg-gradient-to-t{
@@ -2113,6 +2183,10 @@ button,
 
 .bg-heroBg1{
   background-image: url('../images/bg/hero_bg.png');
+}
+
+.bg-heroBgApparel{
+  background-image: url('../images/bg/hero_bg_apparel.png');
 }
 
 #myVideo {
@@ -2667,6 +2741,10 @@ button,
 
 .hover\:bg-background-primaryBg:hover{
   background-color: var(--background);
+}
+
+.hover\:bg-background-secondary:hover{
+  background-color: var(--secondaryColor);
 }
 
 .hover\:text-black:hover{

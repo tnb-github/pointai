@@ -611,6 +611,46 @@ Version      :1.0
         visibility: visible;
         max-height: 500px;
     }
+
+    .dropdown-menu1 {
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity 0.3s ease, max-height 0.3s ease, visibility 0.3s ease;
+      }
+      
+      .dropdown-menu1.open {
+        opacity: 1;
+        visibility: visible;
+        max-height: 500px;
+      }
+      
+      .dropdown1:hover .dropdown-menu1 {
+        opacity: 1;
+        visibility: visible;
+        max-height: 500px;
+      }
+      
+      .dropdown-menu2 {
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity 0.3s ease, max-height 0.3s ease, visibility 0.3s ease;
+      }
+      
+      .dropdown-menu2.open {
+        opacity: 1;
+        visibility: visible;
+        max-height: 500px;
+      }
+      
+      .dropdown2:hover .dropdown-menu2 {
+        opacity: 1;
+        visibility: visible;
+        max-height: 500px;
+      }
 }
 
 /*

@@ -40,7 +40,7 @@ function Contact() {
                 <div class="flex lg:gap-7 gap-5 md:flex-row flex-col">
                     <div class="flex md:w-1/4">
                         <a href="#"
-                            class="flex flex-col text-primary justify-center items-center text-center bg-background-cardBg w-full border-[1px] border-solid border-[#717171] gap-4 lg:py-7 py-5 px-4 hover:bg-background-primaryBg hover:border-secondary"
+                            class="flex flex-col text-primary justify-center items-center text-center bg-background-primaryBg w-full border-[1px] border-solid border-[#717171] gap-4 lg:py-7 py-5 px-4 hover:bg-background-secondary hover:border-secondary"
                             data-aos="flip-left">
                             <figure
                                 class="rounded-full w-[60px] h-[60px] flex justify-center items-center bg-white text-background-primaryBg text-2xl">
@@ -61,7 +61,7 @@ function Contact() {
                     </div>
                     <div class="flex md:w-1/4">
                         <a href="#"
-                            class="flex flex-col text-primary justify-center items-center text-center bg-background-cardBg w-full border-[1px] border-solid border-[#717171] gap-4 lg:py-7 py-5 px-4 hover:bg-background-primaryBg hover:border-secondary"
+                            class="flex flex-col text-primary justify-center items-center text-center bg-background-primaryBg w-full border-[1px] border-solid border-[#717171] gap-4 lg:py-7 py-5 px-4 hover:bg-background-secondary hover:border-secondary"
                             data-aos="flip-left">
                             <figure
                                 class="rounded-full w-[60px] h-[60px] flex justify-center items-center bg-white text-background-primaryBg text-2xl">
@@ -81,7 +81,7 @@ function Contact() {
                     </div>
                     <div class="flex md:w-1/4">
                         <a href="#"
-                            class="flex flex-col text-primary justify-center items-center text-center bg-background-cardBg w-full border-[1px] border-solid border-[#717171] gap-4 lg:py-7 py-5 px-4 hover:bg-background-primaryBg hover:border-secondary"
+                            class="flex flex-col text-primary justify-center items-center text-center bg-background-primaryBg w-full border-[1px] border-solid border-[#717171] gap-4 lg:py-7 py-5 px-4 hover:bg-background-secondary hover:border-secondary"
                             data-aos="flip-left">
                             <figure
                                 class="rounded-full w-[60px] h-[60px] flex justify-center items-center bg-white text-background-primaryBg text-2xl">
@@ -101,7 +101,7 @@ function Contact() {
                     </div>
                     <div class="flex md:w-1/4">
                         <a href="#"
-                            class="flex flex-col text-primary justify-center items-center text-center bg-background-cardBg w-full border-[1px] border-solid border-[#717171] gap-4 lg:py-7 py-5 px-4 hover:bg-background-primaryBg hover:border-secondary"
+                            class="flex flex-col text-primary justify-center items-center text-center bg-background-primaryBg w-full border-[1px] border-solid border-[#717171] gap-4 lg:py-7 py-5 px-4 hover:bg-background-secondary hover:border-secondary"
                             data-aos="flip-left">
                             <figure
                                 class="rounded-full w-[60px] h-[60px] flex justify-center items-center bg-white text-background-primaryBg text-2xl">

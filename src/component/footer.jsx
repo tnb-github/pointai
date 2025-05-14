@@ -114,8 +114,8 @@ function Footer() {
                 </div>
             </div>
         </div>
-        <div class="border-t-[5px] border-[#FFFFFF33] border-solid lg:mt-[50px] md:mt-[30px] mt-[20px]">
-            <p class="lg:py-3 py-2 text-center text-primary">Copyright 2025 Point AI, All rights reserved.</p>
+        <div class="border-t-[5px] border-[#FFFFFF33] border-solid lg:mt-[50px] md:mt-[30px] mt-[20px] bg-secondary">
+            <p class="lg:py-3 py-2 text-center text-black">Copyright 2025 Point AI, All rights reserved.</p>
         </div>
     </footer>
   )
