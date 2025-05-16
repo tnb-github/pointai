@@ -29,14 +29,21 @@ function App() {
 			    <Route exact path="/about-us" element={<About/>} />
 			    <Route exact path="/contact-us" element={<Contact/>} />
 			    <Route exact path="/products" element={<Products/>} />
-			    <Route exact path="/product/vtryon/apparel" element={<ApparelTryon/>} />
+			    {/* <Route exact path="/product/vtryon/apparel" element={<ApparelTryon/>} />
           <Route exact path="/product/vtryon/makeup" element={<MakeupTryon/>} />
           <Route exact path="/product/vtryon/watch" element={<WatchTryon/>} />
           <Route exact path="/product/vtryon/shoe" element={<ShoeTryon/>} />
           <Route exact path="/product/vtryon/shoe" element={<ShoeTryon/>} />
           <Route exact path="/product/three-d" element={<ThreeD/>} />
           <Route exact path="/product/virtual-assistant" element={<VirtualAssistant/>} />
-          <Route exact path="/product/mobile-ui" element={<MobileUI/>} />
+          <Route exact path="/product/mobile-ui" element={<MobileUI/>} /> */}
+          <Route exact path="/apparel-tryon" element={<ApparelTryon/>} />
+          <Route exact path="/makeup-tryon" element={<MakeupTryon/>} />
+          <Route exact path="/watch-tryon" element={<WatchTryon/>} />
+          <Route exact path="/shoe-tryon" element={<ShoeTryon/>} />
+          <Route exact path="/three-d" element={<ThreeD/>} />
+          <Route exact path="/virtual-assistant" element={<VirtualAssistant/>} />
+          <Route exact path="/mobile-ui" element={<MobileUI/>} />
         </Routes>
 	</Router>
   )

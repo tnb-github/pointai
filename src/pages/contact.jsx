@@ -1,6 +1,12 @@
 import { useEffect, useState } from 'react'
 import Header from '../component/header'
 import Footer from '../component/footer'
+// import Map from '../component/Map'
+import Map_Img from '../assets/images/contact/map.png'
+import Delhi_Img from '../assets/images/contact/delhi.png'
+import London_Img from '../assets/images/contact/london.png'
+import SF_Img from '../assets/images/contact/sanf.png'
+import Shanghai_Img from '../assets/images/contact/shanghai.png'
 
 
 function Contact() {
@@ -33,8 +39,9 @@ function Contact() {
                     </div>
                     <h2 class="pt-4 pb-11">We are present Globally</h2>
                     <figure class="md:pb-[50px] pb-[50px]">
-                        <img class="w-full" src="./src/assets/images/contact/map.png" alt="contactImg"
+                        <img class="w-full" src={Map_Img} alt="Address"
                             data-aos="zoom-in-up"/>
+                            {/* <Map/> */}
                     </figure>
                 </div>
                 <div class="flex lg:gap-7 gap-5 md:flex-row flex-col">
@@ -45,7 +52,7 @@ function Contact() {
                             <figure
                                 class="rounded-full w-[60px] h-[60px] flex justify-center items-center bg-white text-background-primaryBg text-2xl">
                                 <img class="w-10 py-3 transition-transform duration-300 ease-in-out group-hover:-translate-y-2"
-                                            src="./src/assets/images/contact/delhi.png" alt="New Delhi"/>
+                                            src={Delhi_Img} alt="New Delhi"/>
                             </figure>
                             <div class="flex justify-center items-center text-center flex-col gap-3">
                                 <h6>NEW DELHI</h6>
@@ -66,7 +73,7 @@ function Contact() {
                             <figure
                                 class="rounded-full w-[60px] h-[60px] flex justify-center items-center bg-white text-background-primaryBg text-2xl">
                                 <img class="w-10 py-3 transition-transform duration-300 ease-in-out group-hover:-translate-y-2"
-                                            src="./src/assets/images/contact/sanf.png" alt="San Francisco"/>
+                                            src={SF_Img} alt="San Francisco"/>
                             </figure>
                             <div class="flex justify-center items-center text-center flex-col gap-3">
                                 <h6>SAN FRANCISCO</h6>
@@ -86,7 +93,7 @@ function Contact() {
                             <figure
                                 class="rounded-full w-[60px] h-[60px] flex justify-center items-center bg-white text-background-primaryBg text-2xl">
                                 <img class="w-10 py-3 transition-transform duration-300 ease-in-out group-hover:-translate-y-2"
-                                            src="./src/assets/images/contact/london.png" alt="London"/>
+                                            src={London_Img} alt="London"/>
                             </figure>
                             <div class="flex justify-center items-center text-center flex-col gap-3">
                                 <h6>LONDON</h6>
@@ -106,7 +113,7 @@ function Contact() {
                             <figure
                                 class="rounded-full w-[60px] h-[60px] flex justify-center items-center bg-white text-background-primaryBg text-2xl">
                                 <img class="w-10 py-3 transition-transform duration-300 ease-in-out group-hover:-translate-y-2"
-                                            src="./src/assets/images/contact/shanghai.png" alt="Shanghai"/>
+                                            src={Shanghai_Img} alt="Shanghai"/>
                             </figure>
                             <div class="flex justify-center items-center text-center flex-col gap-3">
                                 <h6>SHANGHAI</h6>

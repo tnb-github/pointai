@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react'
 import Header from '../component/header'
 import Footer from '../component/footer'
-import ATO_Img from '../assets/images/index/01.png'
-import MTO_Img from '../assets/images/index/02.png'
-import ETO_Img from '../assets/images/index/03.png'
-import CTO_Img from '../assets/images/index/04.png'
+import ATO_Img from '../assets/images/index/sol01.jpg'
+import MTO_Img from '../assets/images/index/sol02.jpg'
+import ETO_Img from '../assets/images/index/sol03.jpg'
+import CTO_Img from '../assets/images/index/sol04_1.jpg'
 import Patents_Img from '../assets/images/index/patents.png'
 import Innovator_Img from '../assets/images/index/innovator.png'
 import Partner_Img from '../assets/images/index/partner.png'
@@ -13,6 +13,7 @@ import AB_Img from '../assets/images/index/aditya-birla.png'
 import VM_Img from '../assets/images/index/vero-moda.png'
 import FK_Img from '../assets/images/index/flipkart.png'
 import HeroBg_Vid from '../assets/videos/hero_bg.mp4'
+import Myntra_Img from '../assets/images/index/myntra.png'
 
 
 function Home() {
@@ -47,12 +48,12 @@ function Home() {
             </video>
           <div class="container lg:pt-30 pt-30">
               <div class="md:text-start text-center" data-aos="fade-right">
-                  <h1 class="text-black">Point AI</h1>
-                  <h3 class="text-black sm:pt-4 pt-3 md:pb-10 pb-4 xl:w-[50%] lg:w-[50%] md:w-[59%] subheading">Auto-generate advanced ecom platform
+                  <h1 class="text-background-primaryBg">Point AI</h1>
+                  <h3 class="text-background-primaryBg sm:pt-4 pt-3 md:pb-10 pb-4 xl:w-[50%] lg:w-[50%] md:w-[59%] subheading">Auto-generate advanced ecom platform
                      with interactive virtual product & try-on.</h3>
                   <div class="flex gap-10 flex-wrap-reverse items-center md:justify-start justify-center">
                       <div>
-                          <a href="/" class="hover1">
+                          <a href="/" class="hover1 bg-background-primaryBg text-white">
                               Explore More
                           </a>
                       </div>
@@ -82,11 +83,11 @@ function Home() {
                                 </figure>
                             </div>
                             <div
-                                class="absolute bottom-0 flex flex-col justify-center p-6 text-primary transition-all group-hover:justify-start group-hover:pb-6">
+                                class="absolute bottom-0 w-full flex flex-col justify-center px-6 pb-10 text-primary transition-all group-hover:justify-start group-hover:pb-6">
                                 <a href="/product/try-on-apparel" class="linkhover">
-                                    <h4 class="transition-all group-hover:translate-y-[-20%]">Apparel Try-On</h4>
+                                    <h5 class="transition-all group-hover:translate-y-[-20%] text-background-primaryBg text-center">Apparel Try-On</h5>
                                 </a>
-                                <p class="hidden group-hover:block transition-all">Point AI goes beyond standard size labels (S, M, L, XL) by letting online 
+                                <p class="hidden group-hover:block transition-all text-background-primaryBg text-center">Point AI goes beyond standard size labels (S, M, L, XL) by letting online 
                                   shoppers try clothes on a virtual body model. It shows how garments fit on different body parts, allows mixing and matching 
                                   outfits, and helps users find the perfect fit and look.</p>
                             </div>
@@ -102,11 +103,11 @@ function Home() {
                                 </figure>
                             </div>
                             <div
-                                class="absolute bottom-0 flex flex-col justify-center p-6 text-primary transition-all group-hover:justify-start group-hover:pb-6">
-                                <a href="/product/try-on-makeup" class="linkhover">
-                                    <h4 class="transition-all group-hover:translate-y-[-20%]">Makeup Try-On</h4>
+                                class="absolute bottom-0 w-full flex flex-col justify-center px-6 pb-10 text-primary transition-all group-hover:justify-start group-hover:pb-6">
+                                <a href="/product/try-on-apparel" class="linkhover">
+                                    <h5 class="transition-all group-hover:translate-y-[-20%] text-background-primaryBg text-center">Makeup Try-On</h5>
                                 </a>
-                                <p class="hidden group-hover:block transition-all">Point AI offers a safe, easy way to try makeup virtually using a mobile or 
+                                <p class="hidden group-hover:block transition-all text-background-primaryBg text-center">Point AI offers a safe, easy way to try makeup virtually using a mobile or 
                                   web camera, with accurate color and texture—no hesitation, just seamless online beauty trials.</p>
                             </div>
                         </div>
@@ -121,11 +122,11 @@ function Home() {
                                 </figure>
                             </div>
                             <div
-                                class="absolute bottom-0 flex flex-col justify-center p-6 text-primary transition-all group-hover:justify-start group-hover:pb-6">
-                                <a href="Services.html" class="linkhover">
-                                    <h4 class="transition-all group-hover:translate-y-[-20%]">Eyewear Try-On</h4>
+                                class="absolute bottom-0 w-full flex flex-col justify-center px-6 pb-10 text-primary transition-all group-hover:justify-start group-hover:pb-6">
+                                <a href="/product/try-on-apparel" class="linkhover">
+                                    <h5 class="transition-all group-hover:translate-y-[-20%] text-background-primaryBg text-center">Eyewear Try-On</h5>
                                 </a>
-                                <p class="hidden group-hover:block transition-all">Lorem ipsum dolor sit amet,
+                                <p class="hidden group-hover:block transition-all text-background-primaryBg text-center">Lorem ipsum dolor sit amet,
                                     consectetur
                                     elit,
                                     sed do eiusmod tempor incididunt labore.</p>
@@ -142,11 +143,11 @@ function Home() {
                                 </figure>
                             </div>
                             <div
-                                class="absolute bottom-0 flex flex-col justify-center p-6 text-primary transition-all group-hover:justify-start group-hover:pb-6">
-                                <a href="Services.html" class="linkhover">
-                                    <h4 class="transition-all group-hover:translate-y-[-20%]">Apparel Catalog Generation</h4>
+                                class="absolute bottom-0 w-full flex flex-col justify-center px-6 pb-10 text-primary transition-all group-hover:justify-start group-hover:pb-6">
+                                <a href="/product/try-on-apparel" class="linkhover">
+                                    <h5 class="transition-all group-hover:translate-y-[-20%] text-background-primaryBg text-center">Apparel Catalog Generation</h5>
                                 </a>
-                                <p class="hidden group-hover:block transition-all duration-500 ease-in-out">Lorem ipsum
+                                <p class="hidden group-hover:block transition-all text-background-primaryBg text-center">Lorem ipsum
                                     dolor
                                     sit amet, consectetur elit,
                                     sed do eiusmod tempor incididunt labore.</p>
@@ -155,7 +156,7 @@ function Home() {
                     </div>
                 </div>
                 <div class="flex justify-center items-center md:pt-16 pt-8 px-3">
-                    <a href="/products" class="hover1">View All</a>
+                    <a href="/" class="hover1  bg-background-primaryBg text-white">Request a Demo</a>
                 </div>
             </div>
         </section>
@@ -176,12 +177,12 @@ function Home() {
                             </div>
                             <h2 class="pt-4 md:pb-4 pb-3 xl:w-[90%]">Unlock The Future with Point AI</h2>
                             <div class="lg:mt-6 mt-4">
-                                <a class="hover1" onClick={startVideo}>Play Intro</a>
+                                <a class="hover2" onClick={startVideo}>Play Intro</a>
                             </div>
                         </div>
                     </div>
                     <div class="flex md:w-1/2 justify-center items-center">
-                        <a class="flex gap-4 items-center group transition-all" data-aos="zoom-in-up" onClick={startVideo}>
+                        <a class="cursor-pointer flex gap-4 items-center group transition-all" data-aos="zoom-in-up" onClick={startVideo}>
                             <figure
                                 class="flex items-center justify-center md:w-24 w-20 h-20 md:h-24 rounded-full bg-primary animate-pulse group-hover:bg-secondary">
                                 <i class="fa fa-play text-background-primaryBg  md:text-4xl text-2xl"></i>
@@ -202,12 +203,17 @@ function Home() {
                                 <h6>AWARDS & RECOGNITIONS</h6>
                             </div>
                             <h3 class="pt-4 md:pb-4 pb-3">What Makes Us Best</h3>
-                            <p class="xl:w-[80%]">Lorem ipsum  dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt ut 
-                              labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip 
-                              ex ea commodo  consequat.</p>
+                            <p class="xl:w-[80%]">Point AI holds the foundational patent for instantly generating full-body 3D models from user selfies, 
+                                enabling virtual dress-up and personalized style recommendations. </p>
+                            <br/>
+                            <p class="xl:w-[80%]">In addition, the company owns multiple other patented 
+                                    technologies that support seamless integration with e-commerce platforms—establishing a robust and defensible technological 
+                                    edge in the virtual try-on space.</p>
+                            <br/>
+                            <p class="xl:w-[80%]">We were honored with the Innovator of the Year 2020 award by Amazon for engineering the world's most cutting-edge virtual try-on solution.</p>
                             <div class="flex lg:gap-12 gap-8 items-center lg:pt-14 pt-10 flex-wrap justify-center">
                                 <div>
-                                    <a href="Services.html" class="hover1">Know More</a>
+                                    <a href="/" class="hover2">Know More</a>
                                 </div>
                                 {/* <div>
                                     <a class="flex gap-4 items-center" href="#">
@@ -291,7 +297,7 @@ function Home() {
                         <img class="w-36" src={FK_Img} alt="Flipkart"/>
                     </div>
                     <div class="w-60">
-                        <img class="w-36" src={Biba_Img} alt="biba"/>
+                        <img class="w-36" src={Myntra_Img} alt="Myntra"/>
                     </div>
                     <div class="w-60">
                         <img class="w-36" src={Biba_Img} alt="biba"/>

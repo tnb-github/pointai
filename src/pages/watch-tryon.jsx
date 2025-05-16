@@ -9,12 +9,12 @@ function WatchTryon() {
     <>
         <Header/>
         <section class="bg-heroBg1 bg-cover bg-center md:pt-36 pt-32 lg:pb-[100px] md:pb-[70px] pb-[50px]">
-            {/* <video autoPlay muted loop id="myVideo">
+            <video autoPlay muted loop id="myVideo">
                 <source src="./src/assets/images/hero_bg.mp4" type="video/mp4"/>
-            </video> */}
+            </video>
           <div class="container lg:pt-10 pt-10">
               <div class="md:text-start text-center" data-aos="fade-right">
-                  <h3 class="text-black">Watch Try-on</h3>
+                  <h3 class="text-black">Virtual Watch Try-on</h3>
                   <p class="text-black sm:pt-4 pt-3 md:pb-10 pb-4 xl:w-[50%] lg:w-[50%] md:w-[59%]">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt labore.</p>
                   <div class="flex gap-10 flex-wrap-reverse items-center md:justify-start justify-center">
                       <div>

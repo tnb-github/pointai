@@ -22,7 +22,7 @@ const handleMouseOut =() => {
 }
 
   return (
-    <header class="bg-black text-white absolute top-0 w-full z-50">
+    <header class="bg-background-primaryBg text-white absolute top-0 w-full z-50">
         <div class="container mx-auto flex justify-between items-center py-4 px-6" data-aos="fade-down">
             <figure class="flex items-center">
                 <a href="/">
@@ -37,10 +37,14 @@ const handleMouseOut =() => {
                         <div class="relative dropdown1 w-50">
                             <a class="block px-4 py-2 cursor-pointer linkhover p"  onMouseOver={handleMouseOver}>Virtual Try-on <i class="fa-solid fa-chevron-right text-xs"></i></a>
                             <div class="absolute left-[50] top-0 w-50 text-primary shadow-lg dropdown-menu1 px-2">
-                                <a class="block px-4 py-2 linkhover p" href="/product/vtryon/apparel">Apparel Try-on</a>
+                                {/* <a class="block px-4 py-2 linkhover p" href="/product/vtryon/apparel">Apparel Try-on</a>
                                 <a class="block px-4 py-2 linkhover  p" href="/product/vtryon/makeup">Makeup Try-on</a>
                                 <a class="block px-4 py-2 linkhover  p" href="/product/vtryon/watch">Watch Try-on</a>
-                                <a class="block px-4 py-2 linkhover  p" href="/product/vtryon/shoe">Shoe Try-on</a>
+                                <a class="block px-4 py-2 linkhover  p" href="/product/vtryon/shoe">Shoe Try-on</a> */}
+                                <a class="block px-4 py-2 linkhover p" href="/apparel-tryon">Apparel Try-on</a>
+                                <a class="block px-4 py-2 linkhover  p" href="/makeup-tryon">Makeup Try-on</a>
+                                <a class="block px-4 py-2 linkhover  p" href="/watch-tryon">Watch Try-on</a>
+                                <a class="block px-4 py-2 linkhover  p" href="/shoe-tryon">Shoe Try-on</a>
                             </div>
                         </div>
                         <div class="relative dropdown2 w-50">
@@ -53,12 +57,12 @@ const handleMouseOut =() => {
                                 <a class="block px-4 py-2 linkhover  p" href="/product/apparel/sanitization">Image Sanitization</a>
                             </div>
                         </div>
-                        <a class="block px-4 py-2 linkhover p" href="/product/virtual-assistant" onMouseOver={handleMouseOut}>Virtual Assistant</a>
-                        <a class="block px-4 py-2 linkhover p" href="/product/3d" onMouseOver={handleMouseOut}>3D Generation</a>
-                        <a class="block px-4 py-2 linkhover p" href="/product/mobile-ui" onMouseOver={handleMouseOut}>Mobile UI Experience</a>
+                        <a class="block px-4 py-2 linkhover p" href="/virtual-assistant" onMouseOver={handleMouseOut}>Virtual Assistant</a>
+                        <a class="block px-4 py-2 linkhover p" href="/three-d" onMouseOver={handleMouseOut}>3D Generation</a>
+                        <a class="block px-4 py-2 linkhover p" href="/mobile-ui" onMouseOver={handleMouseOut}>Mobile UI Experience</a>
                     </div>
                 </div>
-                <a class={`p linkhover ${window.location.pathname == '/rnd' ? 'active' : ''}`} href="/rnd">R&D</a>
+                <a class={`p linkhover ${window.location.pathname == '/rnd' ? 'active' : ''}`} href="/rnd">R & D</a>
                 <a class={`p linkhover ${window.location.pathname == '/about-us' ? 'active' : ''}`} href="/about-us">About Us</a>
                 <a class={`p linkhover ${window.location.pathname == '/contact-us' ? 'active' : ''}`} href="/contact-us">Contact Us</a>
             </nav>

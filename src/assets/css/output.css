@@ -44,9 +44,10 @@ Version      :1.0
 :root {
   /* Color variables */
   --primaryColor: #ffffff;
-  --secondaryColor: #ee9f38;
+  --secondaryColor: #FFE8B9;
+  --orangeColor: #FF9900;
   /* Background color variables */
-  --background: #04070e;
+  --background: #27292E;
   --secondary-background: #131B26;
   --dim-background: #0a0f18;
   --blur-bg: #131B26B2;
@@ -956,7 +957,7 @@ p,
 
 a,
     .a {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 22px;
   font-weight: 500;
   text-decoration: none;
@@ -1121,25 +1122,54 @@ button,
 }
 
 .hover1 {
-  padding: 10px 25px;
-  background-color: transparent;
-  border-radius: 5px;
+  background-color: var(--secondaryColor);
+  width: 158px;
+  height: 34px;
+  border-radius: 35px;
   position: relative;
   overflow: hidden;
   cursor: pointer;
   transition: 0.3s ease;
-  border: 1px solid var(--secondaryColor);
+  /* border: 1px solid var(--secondaryColor); */
   z-index: 1;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: -moz-max-content;
-  width: max-content;
-  color: black;
+  color: var(--background);
 }
 
-.hover1::before,
+.hover2 {
+  background-color: var(--orangeColor);
+  width: 224px;
+  height: 34px;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--background);
+}
+
+.features {
+  border: 1px solid #717171;
+  color: var(--background);
+  border-radius: 9999px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  /* border-[1px] border-solid border-[#717171] text-background rounded-full items-center justify-center  */
+}
+
+.features:hover {
+  background-color: var(--secondaryColor);
+}
+
+/* .hover1::before,
     .hover1::after {
   content: "";
   display: block;
@@ -1161,7 +1191,7 @@ button,
 .hover1::after {
   left: calc(100% + 16px);
   top: calc(100% + 16px);
-}
+} */
 
 /* .hover1:hover::before,
     .hover1:hover::after {
@@ -1177,10 +1207,10 @@ button,
   filter: brightness(0.8);
 } */
 
-.active,
+/* .active,
     .linkhover:hover {
   color: var(--secondaryColor)
-}
+} */
 
 @media screen and (max-width: 767px) {
   .hover1 {
@@ -2170,7 +2200,7 @@ button,
 }
 
 .bg-ctaBg{
-  background-image: url('../images/bg/VideoTile.png');
+  background-image: url('../images/bg/VideoTile.jpg');
 }
 
 .bg-gradient-to-t{
@@ -2185,8 +2215,16 @@ button,
   background-image: url('../images/bg/hero_bg.png');
 }
 
-.bg-heroBgApparel{
-  background-image: url('../images/bg/hero_bg_apparel.png');
+.bg-apparelBg{
+  background-image: url('../images/bg/bg_apparel.png');
+}
+
+.bg-shoeBg{
+  background-image: url('../images/bg/bg_shoes.png');
+}
+
+.bg-aboutBg{
+  background-image: url('../images/bg/bg_about.jpg');
 }
 
 #myVideo {
@@ -2195,12 +2233,24 @@ button,
   min-width: 100%; 
 }
 
+#productBgVid {
+  position: absolute;
+  top: 25px;
+  min-width: 100%; 
+}
+
 #makeup1 {
   min-width: 100%; 
 }
 
 .linear-gradient{
-  background: linear-gradient(180deg, rgba(4, 7, 14, 0) 0%, rgba(4, 7, 14, 0.8) 100%);
+  /* background: linear-gradient(180deg, rgba(4, 7, 14, 0) 0%, rgba(4, 7, 14, 0.8) 100%); */
+  background: linear-gradient(to top, #FFF5DE 0%, #F1E9E9 18%, #F1E9E900 65%);
+}
+
+.linear-gradient-hover{
+  /* background: linear-gradient(180deg, rgba(4, 7, 14, 0) 0%, rgba(4, 7, 14, 0.8) 100%); */
+  background: linear-gradient(to top, #FFF5DE 0%, #F1E9E9 100%);
 }
 
 .from-\[\#00F0FF66\]{
@@ -2376,6 +2426,10 @@ button,
   padding-bottom: 2.75rem;
 }
 
+.pb-20{
+  padding-bottom: 5rem
+}
+
 .pb-2{
   padding-bottom: 0.5rem;
 }
@@ -2448,6 +2502,10 @@ button,
   padding-top: 0.5rem;
 }
 
+.pt-20{
+  padding-top: 5rem;
+}
+
 .pt-24{
   padding-top: 6rem;
 }
@@ -2474,6 +2532,10 @@ button,
 
 .pt-40{
   padding-top: 10rem;
+}
+
+.pt-48{
+  padding-top: 12rem;
 }
 
 .pt-6{
@@ -3410,4 +3472,113 @@ button,
   .xl\:text-\[60px\]{
     font-size: 60px;
   }
+}
+
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
 }

@@ -1,6 +1,16 @@
 import { useEffect, useState } from 'react'
 import Header from '../component/header'
 import Footer from '../component/footer'
+import CEO_Img from '../assets/images/about/ceo.png'
+import WhyUs_Img from '../assets/images/about/whyus.jpg'
+import Innov_Img from '../assets/images/about/innovation.png'
+import Conv_Img from '../assets/images/about/convenience.png'
+import Conf_Img from '../assets/images/about/confidence.png'
+import Real_Img from '../assets/images/about/reality.png'
+import Livemint_Img from '../assets/images/index/livemint.jpg'
+import TimesNow_Img from '../assets/images/index/times-now.jpg'
+import SOSV_Img from '../assets/images/index/chinaccelerator.jpg'
+import YS_Img from '../assets/images/index/TryBuyYourStory.jpg'
 
 
 function About() {
@@ -9,7 +19,7 @@ function About() {
     <>
     <div class="bg-primary">
       <Header/>
-      <section>
+      {/* <section>
         <div
             class="container lg:pt-40 md:pt-36 pt-32 lg:pb-[80px] md:pb-[60px] pb-[45px] border-b-[1px] border-solid border-black text-center">
             <div class="flex flex-col items-center justify-center text-black lg:gap-7 gap-5" data-aos="zoom-in-up">
@@ -23,10 +33,26 @@ function About() {
                 </div>
             </div>
         </div>
-        </section>
-        <section class="lg:py-[100px] md:py-[70px] py-[50px]">
+        </section> */}
+        <section class="bg-aboutBg bg-cover bg-center md:pt-20 pt-20 lg:pb-[100px] md:pb-[70px]">
+          <div class="container lg:pt-20 pt-20">
+              <div class="md:text-start text-center" data-aos="fade-right">
+                  <h3 class="text-black">Innovative Platform</h3>
+                  <p class="text-black sm:pt-4 pt-3 md:pb-10 pb-4 xl:w-[50%] lg:w-[50%] md:w-[59%] text-xl">We build ultra-realistic virtual try-ons to boost engagement, 
+                        enhance experience, and cut returns.</p>
+                  <div class="flex gap-10 flex-wrap-reverse items-center md:justify-start justify-center">
+                      <div>
+                          <a href="/" class="hover1 bg-background-primaryBg text-white">
+                              Know More
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+        <section class="lg:py-[80px] md:py-[70px] py-[50px]">
             <div class="container">
-                <div class="grid lg:grid-cols-[55%_45%] md:grid-cols-[48%_48%] justify-around md:gap-0 gap-6">
+                <div class="grid lg:grid-cols-[55%_45%] md:grid-cols-[48%_48%] justify-center md:gap-0 gap-6">
                     <div class="flex text-black flex-col xl:w-full lg:w-[90%] md:text-start text-center"
                         data-aos="fade-up">
                         <div class="flex items-center md:justify-start justify-center">
@@ -34,7 +60,7 @@ function About() {
                             <h2>Who are we?</h2>
                         </div>
                         <h2 class="py-4"></h2>
-                        <p class="xl:w-[93%] lg:w-[95%]">We are a team of dedicated people who  create the world's most realistic virtual try-on 
+                        <p class="xl:w-[85%] lg:w-[85%]">We are a team of dedicated people who  create the world's most realistic virtual try-on 
                             room to enable online  customers to try-on apparel, jewellery, and makeup before buying, allows fashion businesses to 
                             provide a remarkable customer experience,  increase engagement, decrease the number of returned products.  </p>
                         
@@ -44,7 +70,7 @@ function About() {
                     </div>
                     <div class="w-full flex lg:justify-end justify-center">
                         <figure>
-                            <img class="w-fit" src="./src/assets/images/about/ceo.png" alt="nitin_vats"
+                            <img class="w-fit" src={CEO_Img} alt="nitin_vats"
                                 data-aos="zoom-in-up"/>
                         </figure>
                     </div>
@@ -56,7 +82,7 @@ function About() {
                 <div class="flex lg:flex-row flex-col-reverse lg:gap-4 gap-6 lg:justify-between justify-center">
                     <div class="xl:w-[42%] lg:w-[40%] flex lg:justify-start justify-center">
                         <figure class="w-fit">
-                            <img class="w-full" src="./src/assets/images/about/whyUs.png" alt="whyus" data-aos="zoom-in-up"/>
+                            <img class="w-full" src={WhyUs_Img} alt="whyus" data-aos="zoom-in-up"/>
                         </figure>
                     </div>
                     <div class="xl:w-[58%] lg:w-[60%]">
@@ -74,7 +100,7 @@ function About() {
                                     data-aos="fade-up">
                                     <figure>
                                         <img class="w-12 pt-2 transition-transform duration-300 ease-in-out group-hover:-translate-y-2"
-                                            src="./src/assets/images/about/innovation.png" alt="Innovation"/>
+                                            src={Innov_Img} alt="Innovation"/>
                                     </figure>
                                     <div class="flex flex-col gap-1">
                                         <h5 class="group-hover:text-secondary">Innovation</h5>
@@ -85,7 +111,7 @@ function About() {
                                     data-aos="fade-up">
                                     <figure>
                                         <img class="w-12 pt-2 transition-transform duration-300 ease-in-out group-hover:-translate-y-2"
-                                            src="./src/assets/images/about/confidence.png" alt="Confidence"/>
+                                            src={Conf_Img} alt="Confidence"/>
                                     </figure>
                                     <div class="flex flex-col gap-1">
                                         <h5 class="group-hover:text-secondary">Confidence</h5>
@@ -96,7 +122,7 @@ function About() {
                                     data-aos="fade-up">
                                     <figure>
                                         <img class="w-12 pt-2 transition-transform duration-300 ease-in-out group-hover:-translate-y-2"
-                                            src="./src/assets/images/about/convenience.png" alt="Convenience"/>
+                                            src={Conv_Img} alt="Convenience"/>
                                     </figure>
                                     <div class="flex flex-col gap-1">
                                         <h5 class="group-hover:text-secondary">Convenience</h5>
@@ -108,7 +134,7 @@ function About() {
                                     data-aos="fade-up">
                                     <figure>
                                         <img class="w-12 pt-2 transition-transform duration-300 ease-in-out group-hover:-translate-y-2"
-                                            src="./src/assets/images/about/reality.png" alt="Reality"/>
+                                            src={Real_Img} alt="Reality"/>
                                     </figure>
                                     <div class="flex flex-col gap-1">
                                         <h5 class="group-hover:text-secondary">Reality</h5>
@@ -135,7 +161,7 @@ function About() {
                         <div class="flex h-full sm:flex-row flex-col lg:gap-0 gap-6">
                             <div class="relative group h-full w-full" data-aos="flip-left">
                                 <figure class="h-full w-full">
-                                    <img class="w-full h-full" src="./src/assets/images/index/sosv.jpg" alt="Tryndbuy in Chinaccelerator (SOSV)"/>
+                                    <img class="w-full h-full" src={Livemint_Img} alt="Tryndbuy in Livemint"/>
                                 </figure>
                                 <div
                                     class="absolute md:bottom-8 bottom-4 left-[5%] flex flex-col justify-center p-6 bg-[#131B2699] backdrop-blur-[54px] w-[90%] transform -translate-y-1/2 transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100 group-hover:translate-y-0 text-primary">
@@ -150,12 +176,12 @@ function About() {
                         <div class="flex h-full sm:flex-row flex-col lg:gap-0 gap-6">
                             <div class="relative group h-full w-full" data-aos="flip-left">
                                 <figure class="h-full w-full">
-                                    <img class="w-full h-full" src="./src/assets/images/index/TryBuyYourStory.jpg" alt="Tryndbuy on Yourstory"/>
+                                    <img class="w-full h-full" src={TimesNow_Img} alt="Tryndbuy on Times Now News"/>
                                 </figure>
                                 <div
                                     class="absolute md:bottom-8 bottom-4 left-[5%] flex flex-col justify-center p-6 bg-[#131B2699] backdrop-blur-[54px] w-[90%] transform -translate-y-1/2 transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100 group-hover:translate-y-0 text-primary">
-                                    <a href="https://yourstory.com/2019/01/virtual-trial-room-tryndbuy-fashion?utm_pageloadtype=scroll" target="_blank">
-                                        <h4>Point AI on YourStory</h4>
+                                    <a href="https://www.timesnownews.com/technology-science/we-wanted-to-change-the-way-people-buy-clothes-online-digital-twin-does-that-with-just-a-selfie-says-nitin-vats-of-tryndbuy-article-95473161" target="_blank">
+                                        <h4>Point AI in Times Now</h4>
                                     </a>
                                     {/* <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt labore.
                                     </p> */}
@@ -167,7 +193,7 @@ function About() {
                         <div class="flex h-full sm:flex-row flex-col lg:gap-0 gap-6">
                             <div class="relative group h-full w-full" data-aos="flip-left">
                                 <figure class="h-full w-full">
-                                    <img class="w-full h-full" src="./src/assets/images/index/sosv.jpg" alt="Tryndbuy in Chinaccelerator (SOSV)"/>
+                                    <img class="w-full h-full" src={SOSV_Img} alt="Tryndbuy in Chinaccelerator (SOSV)"/>
                                 </figure>
                                 <div
                                     class="absolute md:bottom-8 bottom-4 left-[5%] flex flex-col justify-center p-6 bg-[#131B2699] backdrop-blur-[54px] w-[90%] transform -translate-y-1/2 transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100 group-hover:translate-y-0 text-primary">
@@ -182,7 +208,7 @@ function About() {
                         <div class="flex h-full sm:flex-row flex-col lg:gap-0 gap-6">
                             <div class="relative group h-full w-full" data-aos="flip-left">
                                 <figure class="h-full w-full">
-                                    <img class="w-full h-full" src="./src/assets/images/index/TryBuyYourStory.jpg" alt="Tryndbuy on Yourstory"/>
+                                    <img class="w-full h-full" src={YS_Img} alt="Tryndbuy on Yourstory"/>
                                 </figure>
                                 <div
                                     class="absolute md:bottom-8 bottom-4 left-[5%] flex flex-col justify-center p-6 bg-[#131B2699] backdrop-blur-[54px] w-[90%] transform -translate-y-1/2 transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100 group-hover:translate-y-0 text-primary">
